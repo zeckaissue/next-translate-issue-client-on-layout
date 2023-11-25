@@ -1,11 +1,11 @@
-import { TestClient } from '@/components/TestClient';
-import useTranslation from 'next-translate/useTranslation';
+import { TestClient } from "@/components/TestClient";
+import { TestServer } from "@/components/TestServer";
 
 const Homepage = () => {
-  const { t } = useTranslation('common');
   return (
     <div>
-      This a page: {t('test')}
+      <h2>Inside PAGE</h2>
+      <TestServer />
       <TestClient />
     </div>
   );
